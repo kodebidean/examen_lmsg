@@ -1,0 +1,27 @@
+<div class="alumno-lista">
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Apellidos</th>
+        <th>DNI</th>
+        <th>Teléfono</th>
+        <th>Asistencia</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let alumno of alumnos">
+        <td>{{ alumno.nombre }}</td>
+        <td>{{ alumno.apellido }}</td>
+        <td>{{ alumno.dni }}</td>
+        <td>{{ alumno.telefono }}</td>
+        <td>{{ alumno.presente ? 'Presente' : 'Ausente' }}</td>
+        <td>
+          <button (click)="eliminarAlumno(alumno)">Eliminar</button>
+          <button (click)="marcarPresente(alumno)" [disabled]="alumno.presente">Marcar Presente</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

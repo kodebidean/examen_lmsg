@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { AlumnoFormComponent } from './alumno-form/alumno-form.component';
+import { AlumnoListaComponent } from './alumno-lista/alumno-lista.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [CommonModule, AlumnoFormComponent, AlumnoListaComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'student-app';
+  title = 'gestion-alumnos';
 }

@@ -1,1 +1,83 @@
-/* You can add global styles to this file, and also import other style files */
+/* Estilos para el contenedor principal */
+body{
+  background-color: darkkhaki;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.container-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrar horizontalmente */
+}
+
+
+
+/* Estilos para el formulario */
+.alumno-form {
+  display: flex;
+  flex-direction: column; /* Alinear elementos en columna */
+  max-width: 400px;
+  margin-bottom:10px;
+
+}
+
+.alumno-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: left; /* Centrar elementos horizontalmente */
+  text-align: right; /* Centrar texto dentro de los inputs */
+  border: 1px solid #ccc;
+}
+
+/* Estilos para cada fila del formulario */
+.alumno-form form div {
+  display: flex;
+  flex-direction: row; /* Alinear elementos en fila */
+  align-items: center; /* Alinear verticalmente al centro */
+  margin-bottom: 10px; /* Espacio entre elementos */
+}
+
+.alumno-form label {
+  flex: 1; /* El input ocupa todo el espacio disponible */
+  padding: 5px;
+  font-size: 14px; /* Reducir el tamaño de los inputs */
+}
+
+.alumno-form input{
+  flex: 1; /* El input ocupa todo el espacio disponible */
+  padding: 5px;
+  border: 1px solid #ddd;
+}
+
+/* Estilos para la lista de alumnos */
+.alumno-lista {
+  flex-grow: 1; /* La lista ocupa todo el espacio disponible */
+  overflow-y: auto; /* Desplazamiento vertical si el contenido es demasiado grande */
+}
+
+.alumno-lista table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.alumno-lista th, .alumno-lista td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.alumno-lista th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+.agregarBtn {
+
+}

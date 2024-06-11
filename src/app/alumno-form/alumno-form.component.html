@@ -1,0 +1,23 @@
+<div class="alumno-form">
+  <form #alumnoForm="ngForm" (ngSubmit)="agregarAlumno(alumnoForm)">
+    <div>
+      <label for="nombre">Nombre:</label>
+      <input id="nombre" [(ngModel)]="nombre" name="nombre" required>
+    </div>
+    <div>
+      <label for="apellido">Apellidos:</label>
+      <input id="apellido" [(ngModel)]="apellido" name="apellido" required>
+    </div>
+    <div>
+      <label for="dni">DNI:</label>
+      <input id="dni" [(ngModel)]="dni" name="dni" required>
+    </div>
+    <div>
+      <label for="telefono">Teléfono:</label>
+      <input id="telefono" [(ngModel)]="telefono" name="telefono" required>
+    </div>
+    <div class="agregarBtn">
+      <button type="submit">Agregar Alumno</button>
+    </div>
+  </form>
+</div>
